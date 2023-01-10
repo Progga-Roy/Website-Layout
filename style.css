@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(159, 157, 157);
+}
+
+section {
+    margin-left: 450px;
+    margin-top: 20px;
+
+}
+
+.img-div {
+    background-image: url('./f.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+
+}
+
+img {
+    width: 300px;
+    border-radius: 5px 0px 0px 0px;
+    margin-bottom: -5px;
+}
+
+.details-date {
+    padding: 55px 12px;
+}
+
+.img-title {
+    text-align: right;
+    color: #ffff;
+    /* padding: 70px 0px; */
+    font-size: 23px;
+    text-transform: uppercase;
+    /* margin-top: 100px; */
+}
+
+.date-jan {
+    /* text-align: right;
+   
+    color:whitesmoke; */
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: rgb(220, 215, 215);
+
+}
+
+.fa-solid {
+    margin-top: -30px;
+}
+
+.calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 30px repeat(5, 1fr);
+    max-width: 300px;
+    grid-row: 20px;
+    /* column-gap: 20px; */
+    height: 300px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.674), rgba(255, 255, 0, 0.653));
+
+    /* background-color: rgba(240, 248, 255, 0.272); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.42), orange);
+
+
+
+}
+
+/* .day{
+    text-align: center;
+} */
+.date,
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#ffff; */
+    /* border-radius: 7px; */
+    margin-top: 10px;
+    /* box-shadow: 2px 2px 5px gray; */
+    /* background-image: linear-gradient(red, yellow); */
+    font-size: 17px;
+
+}
+
+.date:hover {
+    background-color: orange;
+    /* background-color: grey; */
+    border-radius: 7px;
+}
+
+#date {
+    color: red;
+}
+
+#day:nth-child(6n) {
+    color: red;
+}
+
+#day {
+    color: rgb(215, 156, 7);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* #day:hover {
+    background-color: grey;
+    border-radius: 7px;
+} */
+
+#todays-date {
+    background-color: rgba(0, 0, 0, 0.525);
+    border-radius: 50%;
+    color: rgb(215, 156, 7);
+}
+
+#todays-date:hover {
+    background-color: rgba(240, 248, 255, 0.646);
+    ;
+}
+
+.other-month {
+    color: rgb(249, 246, 246);
+    gap: 23px;
+}
